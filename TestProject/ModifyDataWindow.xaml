@@ -1,0 +1,44 @@
+﻿<Window x:Class="TestProject.ModifyDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestProject"
+        mc:Ignorable="d"
+        Title="ModifyDataWindow" Height="585" Width="1147" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+    <Grid x:Name="Модификация_данных">
+        <Label Content="Добавить данные" HorizontalAlignment="Left" Margin="103,34,0,0" VerticalAlignment="Top" Height="44" Width="196" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Изменить данные" HorizontalAlignment="Left" Margin="479,34,0,0" VerticalAlignment="Top" Height="44" Width="195" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Удалить данные" HorizontalAlignment="Left" Margin="862,34,0,0" VerticalAlignment="Top" Height="44" Width="195" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Название:" HorizontalAlignment="Left" Margin="114,112,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Производитель:" HorizontalAlignment="Left" Margin="67,160,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Количество проданных:" HorizontalAlignment="Left" Margin="5,208,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Дата продажи:" HorizontalAlignment="Left" Margin="77,252,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <TextBox x:Name="TxtBox_AddData_Name" HorizontalAlignment="Left" Margin="215,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <TextBox x:Name="TxtBox_AddData_Manuf" HorizontalAlignment="Left" Margin="215,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <TextBox x:Name="TxtBox_AddData_Quantity" HorizontalAlignment="Left" Margin="215,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <Label Content="Название:" HorizontalAlignment="Left" Margin="454,160,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Производитель:" HorizontalAlignment="Left" Margin="407,208,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <TextBox x:Name="TxtBox_ChngData_OldName" HorizontalAlignment="Left" Margin="555,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <TextBox x:Name="TxtBox_ChngData_OldManuf" HorizontalAlignment="Left" Margin="555,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <Label Content="Название:" HorizontalAlignment="Left" Margin="454,308,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Производитель:" HorizontalAlignment="Left" Margin="407,356,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Количество проданных:" HorizontalAlignment="Left" Margin="345,404,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Дата продажи:" HorizontalAlignment="Left" Margin="417,448,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <TextBox x:Name="TxtBox_ChngData_NewName" HorizontalAlignment="Left" Margin="555,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <TextBox x:Name="TxtBox_ChngData_NewManuf" HorizontalAlignment="Left" Margin="555,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <TextBox x:Name="TxtBox_ChngData_NewQuantity" HorizontalAlignment="Left" Margin="555,406,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <Label Content="Название:" HorizontalAlignment="Left" Margin="805,112,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <Label Content="Производитель:" HorizontalAlignment="Left" Margin="758,160,0,0" VerticalAlignment="Top" FontSize="17"/>
+        <TextBox x:Name="TxtBox_DeleteData_Name" HorizontalAlignment="Left" Margin="906,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <TextBox x:Name="TxtBox_DeleteData_Manuf" HorizontalAlignment="Left" Margin="906,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="465,94,0,0" Text="Введите данные строки, которую нужно изменить" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="222" TextAlignment="Center" FontSize="17" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Left" Margin="465,258,0,0" Text="Введите обновленные данные" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="222" TextAlignment="Center" FontSize="17" FontStyle="Italic"/>
+        <Button x:Name="BtnAddData" Content="Добавить" HorizontalAlignment="Left" Margin="134,314,0,0" VerticalAlignment="Top" Height="39" Width="123" FontSize="17" FontWeight="Bold" Click="BtnAddData_Click" Cursor="Hand"/>
+        <Button x:Name="BtnChangeData" Content="Изменить" HorizontalAlignment="Left" Margin="508,498,0,0" VerticalAlignment="Top" Height="39" Width="122" FontSize="17" FontWeight="Bold" Click="BtnChangeData_Click" Cursor="Hand"/>
+        <Button x:Name="BtnDeleteData" Content="Удалить" HorizontalAlignment="Left" Margin="885,224,0,0" VerticalAlignment="Top" Height="39" Width="123" FontSize="17" FontWeight="Bold" Click="BtnDeleteData_Click" Cursor="Hand"/>
+        <DatePicker x:Name="DatePicker_AddData_Date" HorizontalAlignment="Left" Margin="215,254,0,0" VerticalAlignment="Top" FontSize="18" Width="151"/>
+        <DatePicker x:Name="DatePicker_ChngData_NewDate" HorizontalAlignment="Left" Margin="555,449,0,0" VerticalAlignment="Top" FontSize="18" Width="151"/>
+
+    </Grid>
+</Window>

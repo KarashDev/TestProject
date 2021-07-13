@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="467" Width="800" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
     <Grid>
+        <DataGrid x:Name="DataGridSales" Margin="150,80,150,106" ColumnWidth="*"/>
+        <Button x:Name="BtnModifyData" Content="Добавить/Изменить/Удалить" HorizontalAlignment="Left" Margin="208,374,0,0" VerticalAlignment="Top" Height="39" Width="354" FontSize="17" FontWeight="Bold" Click="BtnModifyData_Click" Cursor="Hand"/>
+        <Button x:Name="BtnRefreshData" Content="Обновить" HorizontalAlignment="Left" Margin="323,24,0,0" VerticalAlignment="Top" Height="39" Width="123" FontSize="17" FontWeight="Bold" Click="BtnRefreshData_Click" Cursor="Hand"/>
 
     </Grid>
 </Window>
